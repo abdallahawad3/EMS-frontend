@@ -5,6 +5,10 @@
   font-family: "Outfit", "Inter";
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 @layer utilities {
   .card {
     @apply bg-white rounded-lg border border-slate-200/70;
@@ -33,7 +37,7 @@
             transition-all duration-200 text-sm placeholder:text-slate-400;
   }
 
-  /* Table styles */
+  /*! Table styles */
   .table-modern {
     @apply w-full text-left text-sm;
   }

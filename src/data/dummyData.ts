@@ -71,7 +71,7 @@ export const dummyEmployeeData = [
     firstName: "David",
     lastName: "Michael",
     email: "david@example.com",
-    phone: "9000000001",
+    phone: "201016922613",
     position: "Associate Business Support",
     basicSalary: 1000,
     allowances: 100,
