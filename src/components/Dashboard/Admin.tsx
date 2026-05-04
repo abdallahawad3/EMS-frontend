@@ -35,7 +35,6 @@ const Admin = () => {
         <h1 className="page-title">Dashboard</h1>
         <p className="page-subtitle">
           Welcome back, Admin! Here's an overview of the company's current status and key metrics.
-          Use the links below to manage employees, attendance, leaves, and more.
         </p>
       </div>
 

@@ -2,10 +2,8 @@ import { ArrowRight, CalendarIcon, DollarSignIcon, FileTextIcon } from "lucide-r
 import { dummyEmployeeDashboardData } from "../../data/dummyData";
 import { Link } from "react-router-dom";
 
-interface EmployeeDashboardProps {
-  data: typeof dummyEmployeeDashboardData;
-}
-const EmployeeDashboard = ({ data }: EmployeeDashboardProps) => {
+const EmployeeDashboard = () => {
+  const data = dummyEmployeeDashboardData;
   const cards = [
     {
       title: "Days Present",
