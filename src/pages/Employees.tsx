@@ -175,8 +175,8 @@ const EmployeesPage = () => {
         <EmployeeDialog
           isOpen={isOpen}
           onClose={handleClose}
-          title="Create Employee"
-          description="Fill in the details to create a new employee."
+          title={`${editData ? "Update" : "Create"} Employee`}
+          description={`Fill in the details to ${editData ? "update" : "create"} an employee.`}
         >
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 w-full">
             <div className="border border-gray-300 rounded p-4 space-y-4">
@@ -313,12 +313,23 @@ const EmployeesPage = () => {
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="w-full py-3 bg-linear-to-r from-indigo-600 to-indigo-500 text-white rounded hover:from-indigo-600 hover:to-indigo-600/70 transition cursor-pointer"
-            >
-              Create Employee
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="submit"
+                className="w-full py-3 bg-linear-to-r from-indigo-600 to-indigo-500 text-white rounded hover:from-indigo-600 hover:to-indigo-600/70 transition cursor-pointer"
+              >
+                {editData ? "Update Employee" : "Create Employee"}
+              </button>
+              {editData && (
+                <button
+                  type="button"
+                  onClick={handleClose}
+                  className="w-full py-3 bg-gray-500 text-white rounded hover:bg-gray-600 transition cursor-pointer"
+                >
+                  Cancel
+                </button>
+              )}
+            </div>
           </form>
         </EmployeeDialog>
       )}
