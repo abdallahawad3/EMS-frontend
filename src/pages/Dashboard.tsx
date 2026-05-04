@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
 import EmployeeDashboard from "../components/Dashboard/Employee";
 import Admin from "../components/Dashboard/Admin";
