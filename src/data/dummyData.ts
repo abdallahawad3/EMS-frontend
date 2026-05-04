@@ -1,3 +1,12 @@
+import {
+  CalendarIcon,
+  DollarSignIcon,
+  FileText,
+  LayoutGrid,
+  SettingsIcon,
+  UserIcon,
+} from "lucide-react";
+
 export const DEPARTMENTS = [
   "Engineering",
   "Human Resources",
@@ -9,6 +18,15 @@ export const DEPARTMENTS = [
   "Customer Success",
   "Product Management",
   "Design",
+];
+
+export const NAVIGATION_LINKS = [
+  { label: "Dashboard", path: "/dashboard", icon: LayoutGrid },
+  { label: "Employees", path: "/employees", icon: UserIcon },
+  { label: "Attendance", path: "/attendance", icon: CalendarIcon },
+  { label: "Leaves", path: "/leaves", icon: FileText },
+  { label: "Payslips", path: "/payslips", icon: DollarSignIcon },
+  { label: "Settings", path: "/settings", icon: SettingsIcon },
 ];
 
 export const dummyAdminDashboardData = {
