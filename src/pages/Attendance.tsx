@@ -55,7 +55,7 @@ const AttendancePage = () => {
       )}
 
       <AttendanceStates history={history} />
-      <AttendanceHistory history={history} onAction={() => setIsDeleted(true)} />
+      <AttendanceHistory history={history} />
     </div>
   );
 };
